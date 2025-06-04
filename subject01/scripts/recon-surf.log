@@ -1,0 +1,49 @@
+Log file for recon-surf.sh
+Sun May  4 11:35:23 PM UTC 2025
+ 
+export SUBJECTS_DIR=/content/output
+cd /content/FastSurfer/recon_surf
+./recon-surf.sh --sid subject01 --sd /content/output --t1 /content/output/subject01/mri/orig.mgz --mask_name /content/output/subject01/mri/mask.mgz --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --threads 4 --py python3.10\ -s
+ 
+freesurfer-macOS-darwin_x86_64-7.4.1-20230614-7eb8460
+$Id$
+Linux b5200e646dfe 6.1.123+ #1 SMP PREEMPT_DYNAMIC Sun Mar 30 16:01:29 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+ 
+ RUNNING both hemis in PARALLEL
+ RUNNING 4 number of OMP THREADS
+ RUNNING 4 number of ITK THREADS
+ 
+Checking Input Segmentation Quality ...
+python3.10 -s /content/FastSurfer/FastSurferCNN/quick_qc.py --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz
+Reading in aparc+aseg: /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz ...
+Estimating ventricle-background intersection volume...
+Ventricle-background intersection volume in mm3: 0.00
+Checking total volume ...
+Voxel size in mm3: 0.823974609375
+Total segmentation volume in liter: 1.35
+
+ 
+================== Creating orig and rawavg from input =========================
+ 
+python3.10 -s /content/FastSurfer/FastSurferCNN/data_loader/conform.py -i /content/output/subject01/mri/orig.mgz --check_only --vox_size min --verbose
+Reading input: /content/output/subject01/mri/orig.mgz ...
+[INFO: conform.py:  826]: A min-conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : True
+[INFO: conform.py:  828]:  - Voxel Size 0.9375x0.9375x0.9375: True
+[INFO: conform.py:  828]:  - Orientation LIA               : True
+[INFO: conform.py:  828]:  - Dtype uint8                   : True
+Input /content/output/subject01/mri/orig.mgz is already conformed! Exiting.
+
+python3.10 -s /content/FastSurfer/FastSurferCNN/data_loader/conform.py -i /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --check_only --vox_size 0.9375 --dtype any --verbose
+Reading input: /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz ...
+[INFO: conform.py:  826]: A 0.9375-conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : True
+[INFO: conform.py:  828]:  - Voxel Size 0.9375x0.9375x0.9375: True
+[INFO: conform.py:  828]:  - Orientation LIA               : True
+Input /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz is already conformed! Exiting.
+
+The voxel size 0.9375 is not less than 0.999, so we are proceeding with standard options.
+mri_convert /content/output/subject01/mri/orig.mgz /content/output/subject01/mri/orig.mgz
+/content/FastSurfer/recon_surf//functions.sh: line 73: /content/FastSurfer/freesurfer/bin/mri_convert: cannot execute binary file: Exec format error

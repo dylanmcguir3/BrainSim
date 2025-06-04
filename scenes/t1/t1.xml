@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+
+<Node name="root" gravity="0 -9.81 0" dt="0.001">
+    <!-- Required plugins -->
+    <RequiredPlugin name="Sofa.Component.IO.Mesh"/>
+    <RequiredPlugin name="Sofa.Component.ODESolver.Backward"/>
+    <RequiredPlugin name="Sofa.Component.LinearSolver.Iterative"/>
+    <RequiredPlugin name="Sofa.Component.Topology.Container.Constant"/>
+    <RequiredPlugin name="Sofa.Component.StateContainer"/>
+    <RequiredPlugin name="Sofa.Component.Visual"/>
+    <RequiredPlugin name="Sofa.Component.Mapping.Linear"/>
+    <RequiredPlugin name="Sofa.Component.Mass"/>
+    <RequiredPlugin name="Sofa.Component.MechanicalLoad"/>
+    <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/>
+    <RequiredPlugin name="Sofa.Component.Constraint.Projective"/> <!-- Needed to use components [FixedProjectiveConstraint] -->  
+    <RequiredPlugin name="Sofa.Component.SolidMechanics.FEM.Elastic"/> <!-- Needed to use components [TriangleFEMForceField] -->  
+    <RequiredPlugin name="Sofa.Component.SolidMechanics.Spring"/> <!-- Needed to use components [TriangleBendingSprings] -->  
+    <RequiredPlugin name="Sofa.Component.Topology.Container.Dynamic"/>
+    <RequiredPlugin name="Sofa.Component.ODESolver.Forward"/> <!-- Needed to use components [EulerExplicitSolver] -->  
+    <RequiredPlugin name="Sofa.Component.SceneUtility"/> <!-- Needed to use components [InfoComponent] -->  
+    <RequiredPlugin name="Sofa.Component.Collision.Detection.Algorithm"/> <!-- Needed to use components [BVHNarrowPhase,BruteForceBroadPhase,BruteForceDetection,CollisionPipeline] -->  
+    <RequiredPlugin name="Sofa.Component.Collision.Detection.Intersection"/> <!-- Needed to use components [MinProximityIntersection] -->  
+    <RequiredPlugin name="Sofa.Component.Collision.Response.Contact"/> <!-- Needed to use components [CollisionResponse] -->  
+
+    <DefaultAnimationLoop/>
+
+    <!-- Load 2D triangle mesh -->
+    <MeshGmshLoader name="meshLoader" filename="t1.msh" />
+
+    <VisualStyle displayFlags="showVisual showBehaviorModels showInteractionForceFields"/>
+    <Node name="SurfaceModel">
+
+
+        <!-- Solvers -->
+        <EulerImplicitSolver rayleighMass="0.01" rayleighStiffness="0.01" />
+        <CGLinearSolver iterations="100" tolerance="1e-9" threshold="1e-9" />
+
+        <!-- Topology + geometry -->
+        <TriangleSetTopologyContainer name="topo" src="@../meshLoader" />
+        <TriangleSetGeometryAlgorithms name="GeomAlgo" />
+        <MechanicalObject name="dofs" template="Vec3d" showObject="1"/>
+
+        <!-- Mass (per node) -->
+        <UniformMass totalMass="10.0" />
+
+        <!-- Force field for deformation -->
+        <TriangleFEMForceField name="FEM" youngModulus="7000" poissonRatio="0.5" />
+
+        <!-- Optional: Bending resistance -->
+        <TriangleBendingSprings stiffness="10" damping="1" />
+
+        <FixedProjectiveConstraint indices="0 1 2 3 4" />
+
+        <!--  Purely visual part  -->
+        <Node name="Visual">
+            <OglModel name="visualMesh" src="@../topo" template="Vec3d"
+                      color="0.8 0.8 0"/>
+            <IdentityMapping input="@../dofs" output="@visualMesh"/>
+        </Node>
+
+
+    </Node>
+
+</Node>

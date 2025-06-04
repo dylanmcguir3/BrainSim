@@ -1,0 +1,818 @@
+=========================================================
+Start of the log for a new run_fastsurfer.sh invocation
+=========================================================
+Version: 2.5.0-dev+69138cb
+Sun May  4 11:00:27 PM UTC 2025
+
+Log file for FastSurfer pipeline, run_fastsurfer.sh and segmentation(s)
+WARNING: The --parallel flag is obsolete and will be removed in FastSurfer 3.
+  Hemispheres are now automatically processed in parallel, if threads for surface 
+  reconstruction are more than 1 (defined via --threads 2 or --threads_surf 2)!
+IMPORTANT NOTE: The threads behavior has also changed, --threads used to define the
+  number of threads per hemisphere, it now defines the number of threads in total!
+python3.10 -s /content/FastSurfer/FastSurferCNN/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --brainmask_name /content/output/subject01/mri/mask.mgz --aseg_name /content/output/subject01/mri/aseg.auto_noCCseg.mgz --sid subject01 --seg_log /content/output/subject01/scripts/deep-seg.log --vox_size min --batch_size 8 --viewagg_device auto --device auto --threads 4 --sd /content/output
+ERROR: FastSurfer asegdkt segmentation failed.
+=========================================================
+Start of the log for a new run_fastsurfer.sh invocation
+=========================================================
+Version: 2.5.0-dev+69138cb
+Sun May  4 11:00:53 PM UTC 2025
+
+Log file for FastSurfer pipeline, run_fastsurfer.sh and segmentation(s)
+WARNING: The --parallel flag is obsolete and will be removed in FastSurfer 3.
+  Hemispheres are now automatically processed in parallel, if threads for surface 
+  reconstruction are more than 1 (defined via --threads 2 or --threads_surf 2)!
+IMPORTANT NOTE: The threads behavior has also changed, --threads used to define the
+  number of threads per hemisphere, it now defines the number of threads in total!
+python3.10 -s /content/FastSurfer/FastSurferCNN/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --brainmask_name /content/output/subject01/mri/mask.mgz --aseg_name /content/output/subject01/mri/aseg.auto_noCCseg.mgz --sid subject01 --seg_log /content/output/subject01/scripts/deep-seg.log --vox_size min --batch_size 8 --viewagg_device auto --device auto --threads 4 --sd /content/output
+ERROR: FastSurfer asegdkt segmentation failed.
+=========================================================
+Start of the log for a new run_fastsurfer.sh invocation
+=========================================================
+Version: 2.5.0-dev+69138cb
+Sun May  4 11:01:24 PM UTC 2025
+
+Log file for FastSurfer pipeline, run_fastsurfer.sh and segmentation(s)
+WARNING: The --parallel flag is obsolete and will be removed in FastSurfer 3.
+  Hemispheres are now automatically processed in parallel, if threads for surface 
+  reconstruction are more than 1 (defined via --threads 2 or --threads_surf 2)!
+IMPORTANT NOTE: The threads behavior has also changed, --threads used to define the
+  number of threads per hemisphere, it now defines the number of threads in total!
+python3.10 -s /content/FastSurfer/FastSurferCNN/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --brainmask_name /content/output/subject01/mri/mask.mgz --aseg_name /content/output/subject01/mri/aseg.auto_noCCseg.mgz --sid subject01 --seg_log /content/output/subject01/scripts/deep-seg.log --vox_size min --batch_size 8 --viewagg_device auto --device auto --threads 4 --sd /content/output
+ERROR: FastSurfer asegdkt segmentation failed.
+=========================================================
+Start of the log for a new run_fastsurfer.sh invocation
+=========================================================
+Version: 2.5.0-dev+69138cb
+Sun May  4 11:01:47 PM UTC 2025
+
+Log file for FastSurfer pipeline, run_fastsurfer.sh and segmentation(s)
+WARNING: The --parallel flag is obsolete and will be removed in FastSurfer 3.
+  Hemispheres are now automatically processed in parallel, if threads for surface 
+  reconstruction are more than 1 (defined via --threads 2 or --threads_surf 2)!
+IMPORTANT NOTE: The threads behavior has also changed, --threads used to define the
+  number of threads per hemisphere, it now defines the number of threads in total!
+python3.10 -s /content/FastSurfer/FastSurferCNN/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --brainmask_name /content/output/subject01/mri/mask.mgz --aseg_name /content/output/subject01/mri/aseg.auto_noCCseg.mgz --sid subject01 --seg_log /content/output/subject01/scripts/deep-seg.log --vox_size min --batch_size 8 --viewagg_device auto --device auto --threads 4 --sd /content/output
+[INFO: run_prediction.py:  647]: Checking or downloading default checkpoints ...
+[INFO: checkpoint.py:  354]: Downloading checkpoint aparc_vinn_axial_v2.0.0.pkl from https://zenodo.org/records/10390573/files
+[INFO: checkpoint.py:  354]: Downloading checkpoint aparc_vinn_coronal_v2.0.0.pkl from https://zenodo.org/records/10390573/files
+[INFO: checkpoint.py:  354]: Downloading checkpoint aparc_vinn_sagittal_v2.0.0.pkl from https://zenodo.org/records/10390573/files
+[INFO: common.py:  821]: Single subject with absolute file path for input.
+[INFO: common.py:  879]: Analyzing single subject /content/MRI_human_1_norm.nii
+[INFO: common.py:  977]: Output will be stored in Subjects Directory: /content/output
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: run_prediction.py:  245]: Running view aggregation on cuda
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_coronal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_sagittal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_axial_v2.0.0.pkl
+[INFO: run_prediction.py:  324]: Successfully loaded image from /content/MRI_human_1_norm.nii.
+[INFO: run_prediction.py:  441]: Output image directory /content/output/subject01/mri/orig does not exist. Creating it now...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/orig/001.mgz.
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A min-conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : BUT image dimensions (256, 256, 150)
+[INFO: conform.py:  828]:  - Voxel Size 0.9375x0.9375x0.9375: BUT image 0.9375x0.9375x1.2000035
+[INFO: conform.py:  828]:  - Orientation LIA               : BUT strict: [[ 0.04 -0.07 1.2 ] [-0.93 0.12 0.06] [ 0.13 0.93 0.08]]
+[INFO: conform.py:  828]:  - Dtype uint8                   : BUT dtype float64
+[INFO: run_prediction.py:  337]: Conforming image
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/orig.mgz.
+[INFO: run_prediction.py:  400]: Run coronal prediction
+[INFO: dataset.py:   78]: Loading Coronal with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for coronal successful
+[INFO: inference.py:  469]: Coronal inference on /content/MRI_human_1_norm.nii finished in 8.6182 seconds
+[INFO: run_prediction.py:  400]: Run sagittal prediction
+[INFO: dataset.py:   69]: Loading Sagittal with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for sagittal successful
+[INFO: inference.py:  469]: Sagittal inference on /content/MRI_human_1_norm.nii finished in 8.0335 seconds
+[INFO: run_prediction.py:  400]: Run axial prediction
+[INFO: dataset.py:   74]: Loading Axial with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for axial successful
+[INFO: inference.py:  469]: Axial inference on /content/MRI_human_1_norm.nii finished in 8.3327 seconds
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz.
+[INFO: run_prediction.py:  724]: Creating brainmask based on segmentation...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/mask.mgz.
+[INFO: run_prediction.py:  743]: Creating aseg based on segmentation...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/aseg.auto_noCCseg.mgz.
+[INFO: run_prediction.py:  762]: Running volume-based QC check on segmentation...
+INFO: Running N4 bias-field correction...
+python3.10 -s /content/FastSurfer/recon_surf/N4_bias_correct.py --in /content/output/subject01/mri/orig.mgz --rescale /content/output/subject01/mri/orig_nu.mgz --aseg /content/output/subject01/mri/aseg.auto_noCCseg.mgz --threads 4
+Traceback (most recent call last):
+  File "/content/FastSurfer/recon_surf/N4_bias_correct.py", line 27, in <module>
+    import image_io as iio
+  File "/content/FastSurfer/recon_surf/image_io.py", line 25, in <module>
+    import SimpleITK as sitk
+ModuleNotFoundError: No module named 'SimpleITK'
+ERROR: Biasfield correction failed!
+=========================================================
+Start of the log for a new run_fastsurfer.sh invocation
+=========================================================
+Version: 2.5.0-dev+69138cb
+Sun May  4 11:03:15 PM UTC 2025
+
+Log file for FastSurfer pipeline, run_fastsurfer.sh and segmentation(s)
+WARNING: The --parallel flag is obsolete and will be removed in FastSurfer 3.
+  Hemispheres are now automatically processed in parallel, if threads for surface 
+  reconstruction are more than 1 (defined via --threads 2 or --threads_surf 2)!
+IMPORTANT NOTE: The threads behavior has also changed, --threads used to define the
+  number of threads per hemisphere, it now defines the number of threads in total!
+WARNING: Found 6 files in subject directory $SUBJECTS_DIR/subject01:
+  Potentially Overwriting: ./mri/aparc.DKTatlas+aseg.deep.mgz ./mri/mask.mgz ./mri/orig.mgz ./mri/orig/001.mgz ./mri/aseg.auto_noCCseg.mgz ./scripts/build.log
+python3.10 -s /content/FastSurfer/FastSurferCNN/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --brainmask_name /content/output/subject01/mri/mask.mgz --aseg_name /content/output/subject01/mri/aseg.auto_noCCseg.mgz --sid subject01 --seg_log /content/output/subject01/scripts/deep-seg.log --vox_size min --batch_size 8 --viewagg_device auto --device auto --threads 4 --sd /content/output
+[INFO: run_prediction.py:  647]: Checking or downloading default checkpoints ...
+[INFO: common.py:  821]: Single subject with absolute file path for input.
+[INFO: common.py:  879]: Analyzing single subject /content/MRI_human_1_norm.nii
+[INFO: common.py:  977]: Output will be stored in Subjects Directory: /content/output
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: run_prediction.py:  245]: Running view aggregation on cuda
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_coronal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_sagittal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_axial_v2.0.0.pkl
+[INFO: run_prediction.py:  324]: Successfully loaded image from /content/MRI_human_1_norm.nii.
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/orig/001.mgz.
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A min-conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : BUT image dimensions (256, 256, 150)
+[INFO: conform.py:  828]:  - Voxel Size 0.9375x0.9375x0.9375: BUT image 0.9375x0.9375x1.2000035
+[INFO: conform.py:  828]:  - Orientation LIA               : BUT strict: [[ 0.04 -0.07 1.2 ] [-0.93 0.12 0.06] [ 0.13 0.93 0.08]]
+[INFO: conform.py:  828]:  - Dtype uint8                   : BUT dtype float64
+[INFO: run_prediction.py:  337]: Conforming image
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/orig.mgz.
+[INFO: run_prediction.py:  400]: Run coronal prediction
+[INFO: dataset.py:   78]: Loading Coronal with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for coronal successful
+[INFO: inference.py:  469]: Coronal inference on /content/MRI_human_1_norm.nii finished in 8.1270 seconds
+[INFO: run_prediction.py:  400]: Run sagittal prediction
+[INFO: dataset.py:   69]: Loading Sagittal with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for sagittal successful
+[INFO: inference.py:  469]: Sagittal inference on /content/MRI_human_1_norm.nii finished in 8.2368 seconds
+[INFO: run_prediction.py:  400]: Run axial prediction
+[INFO: dataset.py:   74]: Loading Axial with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for axial successful
+[INFO: inference.py:  469]: Axial inference on /content/MRI_human_1_norm.nii finished in 8.4921 seconds
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz.
+[INFO: run_prediction.py:  724]: Creating brainmask based on segmentation...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/mask.mgz.
+[INFO: run_prediction.py:  743]: Creating aseg based on segmentation...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/aseg.auto_noCCseg.mgz.
+[INFO: run_prediction.py:  762]: Running volume-based QC check on segmentation...
+INFO: Running N4 bias-field correction...
+python3.10 -s /content/FastSurfer/recon_surf/N4_bias_correct.py --in /content/output/subject01/mri/orig.mgz --rescale /content/output/subject01/mri/orig_nu.mgz --aseg /content/output/subject01/mri/aseg.auto_noCCseg.mgz --threads 4
+
+N4 Bias Correction Parameters:
+
+- verbosity: -1
+- input volume: /content/output/subject01/mri/orig.mgz
+- output volume: do not save
+- rescaled volume: /content/output/subject01/mri/orig_nu.mgz
+- mask: default (>0)
+- aseg: /content/output/subject01/mri/aseg.auto_noCCseg.mgz
+- shrink factor: 4
+- number fitting levels: 4
+- number iterations: 50
+- convergence threshold: 0.0
+- threads: 4
+read MGZ (FreeSurfer) image via nibabel...
+executing N4 correction ...
+- mask: ones (default)
+normalize WM to 105.0 (find WM from aseg)
+read MGZ (FreeSurfer) image via nibabel...
+- source white matter intensity: 116.66
+- m: 0.8743
+converting rescaled to UCHAR
+writing PosixPath: /content/output/subject01/mri/orig_nu.mgz
+write MGZ (FreeSurfer) image via nibabel...
+python3.10 -s /content/FastSurfer/FastSurferCNN/segstats.py --segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --normfile /content/output/subject01/mri/orig_nu.mgz --lut /content/FastSurfer/FastSurferCNN/config/FreeSurferColorLUT.txt --sd /content/output --sid subject01 --threads 4 --empty --excludeid 0 --ids 2 4 5 7 8 10 11 12 13 14 15 16 17 18 24 26 28 31 41 43 44 46 47 49 50 51 52 53 54 58 60 63 77 251 252 253 254 255 1002 1003 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1034 1035 2002 2003 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2034 2035 --segstatsfile /content/output/subject01/stats/aseg+DKT.VINN.stats measures --compute Mask(/content/output/subject01/mri/mask.mgz) BrainSeg BrainSegNotVent SupraTentorial SupraTentorialNotVent SubCortGray rhCerebralWhiteMatter lhCerebralWhiteMatter CerebralWhiteMatter
+None of the labels [251, 252, 253, 254, 255] for merged label 10007 exist in the segmentation.
+Partial volume stats for 100 labels written to /content/output/subject01/stats/aseg+DKT.VINN.stats.
+Calculation took 16.13 seconds using up to 4 threads.
+python3.10 -s /content/FastSurfer/FastSurferCNN/segstats.py --segfile /content/output/subject01/mri/aseg.auto_noCCseg.mgz --normfile /content/output/subject01/mri/orig_nu.mgz --lut /content/FastSurfer/FastSurferCNN/config/FreeSurferColorLUT.txt --sd /content/output --sid subject01 --threads 4 --empty --excludeid 0 --ids 2 4 3 5 7 8 10 11 12 13 14 15 16 17 18 24 26 28 31 41 42 43 44 46 47 49 50 51 52 53 54 58 60 63 77 --segstatsfile /content/output/subject01/stats/aseg.VINN.stats measures --import all --file /content/output/subject01/stats/aseg+DKT.VINN.stats
+Partial volume stats for 35 labels written to /content/output/subject01/stats/aseg.VINN.stats.
+Calculation took 5.95 seconds using up to 4 threads.
+python3.10 -s /content/FastSurfer/CerebNet/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --cereb_segfile /content/output/subject01/mri/cerebellum.CerebNet.nii.gz --seg_log /content/output/subject01/scripts/deep-seg.log --async_io --batch_size 8 --viewagg_device auto --device auto --threads 4 --norm_name /content/output/subject01/mri/orig_nu.mgz --cereb_statsfile /content/output/subject01/stats/cerebellum.CerebNet.stats --sd /content/output
+[INFO: run_prediction.py:  151]: Checking or downloading default checkpoints ...
+[INFO: checkpoint.py:  354]: Downloading checkpoint CerebNet_axial_v1.0.0.pkl from https://zenodo.org/records/10390742/files
+[INFO: checkpoint.py:  354]: Downloading checkpoint CerebNet_coronal_v1.0.0.pkl from https://zenodo.org/records/10390742/files
+[INFO: checkpoint.py:  354]: Downloading checkpoint CerebNet_sagittal_v1.0.0.pkl from https://zenodo.org/records/10390742/files
+[INFO: common.py:  821]: Single subject with absolute file path for input.
+[INFO: common.py:  879]: Analyzing single subject /content/MRI_human_1_norm.nii
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: inference.py:  421]: 25-05-04_23:07:52
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : True
+[INFO: conform.py:  828]:  - Voxel Size 1.0x1.0x1.0        : BUT image 0.9375x0.9375x0.9375
+[INFO: conform.py:  828]:  - Orientation LIA               : True
+[INFO: conform.py:  828]:  - Dtype uint8                   : True
+[INFO: data_utils.py:  101]: Conforming image to UCHAR, RAS orientation, and minimum isotropic voxels
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : BUT image dimensions (256, 256, 150)
+[INFO: conform.py:  828]:  - Voxel Size 1.0x1.0x1.0        : BUT image 0.9375x0.9375x1.2000035
+[INFO: conform.py:  828]:  - Orientation LIA               : BUT strict: [[ 0.04 -0.07 1.2 ] [-0.93 0.12 0.06] [ 0.13 0.93 0.08]]
+[INFO: conform.py:  828]:  - Dtype uint8                   : BUT dtype float64
+[INFO: data_utils.py:  101]: Conforming image to UCHAR, RAS orientation, and minimum isotropic voxels
+[INFO: conform.py:  978]: 
+[INFO: dataset.py:  260]: The conformed image and the segmentation do not share the same affine. The cerebellum mask is being resampled to localize it in the conformed image.
+[INFO: inference.py:  350]: Saving CerebNet cerebellum segmentation at /content/output/subject01/mri/cerebellum.CerebNet.nii.gz
+[INFO: inference.py:  499]: Subject 1/1 with id 'MRI_human_1_norm.nii' processed in 16.99 sec.
+python3.10 -s /content/FastSurfer/HypVINN/run_prediction.py --sd /content/output --sid subject01 --reg_mode coreg --threads 4 --async_io --batch_size 8 --seg_log /content/output/subject01/scripts/deep-seg.log --device auto --viewagg_device auto --t1 /content/output/subject01/mri/orig_nu.mgz
+[INFO: mode_config.py:   49]: Setting up input mode...
+[INFO: run_prediction.py:  255]: Running HypVINN segmentation pipeline on subject subject01
+[INFO: run_prediction.py:  256]: Output will be stored in: /content/output/subject01
+[INFO: run_prediction.py:  257]: T1 image input /content/output/subject01/mri/orig_nu.mgz
+[INFO: run_prediction.py:  258]: T2 image input None
+[INFO: run_prediction.py:  276]: Setting up HypVINN run
+[INFO: run_prediction.py:  282]: axial model configuration from /content/FastSurfer/HypVINN/config/HypVINN_axial_v1.1.0.yaml
+[INFO: run_prediction.py:  407]: Checking or downloading default checkpoints ...
+[INFO: checkpoint.py:  354]: Downloading checkpoint HypVINN_axial_v1.1.0.pkl from https://zenodo.org/records/11184216/files
+[INFO: run_prediction.py:  282]: coronal model configuration from /content/FastSurfer/HypVINN/config/HypVINN_coronal_v1.1.0.yaml
+[INFO: run_prediction.py:  282]: sagittal model configuration from /content/FastSurfer/HypVINN/config/HypVINN_sagittal_v1.1.0.yaml
+[INFO: run_prediction.py:  473]: Loading T1 image from : /content/output/subject01/mri/orig_nu.mgz
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: inference.py:  109]: Running view aggregation on cuda
+[INFO: run_prediction.py:  310]: ------------------------------------------------------------------------------------------------------------------------
+[INFO: run_prediction.py:  311]: Evaluating hypothalamus model on subject01
+[INFO: checkpoint.py:  354]: Downloading checkpoint HypVINN_coronal_v1.1.0.pkl from https://zenodo.org/records/11184216/files
+[INFO: checkpoint.py:  354]: Downloading checkpoint HypVINN_sagittal_v1.1.0.pkl from https://zenodo.org/records/11184216/files
+[INFO: run_prediction.py:  320]: Scale factor: (np.float32(0.938), np.float32(0.938), np.float32(0.938))
+[INFO: run_prediction.py:  577]: Evaluating axial model, cpkt :/content/FastSurfer/checkpoints/HypVINN_axial_v1.1.0.pkl
+[INFO: inference.py:  183]: Loading checkpoint /content/FastSurfer/checkpoints/HypVINN_axial_v1.1.0.pkl
+[INFO: dataset.py:  166]: Loading t1 axial with input voxelsize (np.float32(0.938), np.float32(0.938))
+[INFO: dataset.py:  114]: Successfully loaded Image from subject01 for axial model
+[INFO: dataset.py:  126]: For inference T1 block weight was set to: 1.0 and the T2 block was set to: 0.0
+[INFO: inference.py:  345]: --->  axial Model Testing Done.
+[INFO: inference.py:  404]: axial Inference on subject01 finished in 11.3283 seconds
+[INFO: run_prediction.py:  577]: Evaluating coronal model, cpkt :/content/FastSurfer/checkpoints/HypVINN_coronal_v1.1.0.pkl
+[INFO: inference.py:  183]: Loading checkpoint /content/FastSurfer/checkpoints/HypVINN_coronal_v1.1.0.pkl
+[INFO: dataset.py:  160]: Loading t1 coronal with input voxelsize (np.float32(0.938), np.float32(0.938))
+[INFO: dataset.py:  114]: Successfully loaded Image from subject01 for coronal model
+[INFO: dataset.py:  126]: For inference T1 block weight was set to: 1.0 and the T2 block was set to: 0.0
+[INFO: inference.py:  345]: --->  coronal Model Testing Done.
+[INFO: inference.py:  404]: coronal Inference on subject01 finished in 11.0274 seconds
+[INFO: run_prediction.py:  577]: Evaluating sagittal model, cpkt :/content/FastSurfer/checkpoints/HypVINN_sagittal_v1.1.0.pkl
+[INFO: inference.py:  183]: Loading checkpoint /content/FastSurfer/checkpoints/HypVINN_sagittal_v1.1.0.pkl
+[INFO: dataset.py:  153]: Loading t1 sagittal with input voxelsize (np.float32(0.938), np.float32(0.938))
+[INFO: dataset.py:  114]: Successfully loaded Image from subject01 for sagittal model
+[INFO: dataset.py:  126]: For inference T1 block weight was set to: 1.0 and the T2 block was set to: 0.0
+[INFO: inference.py:  345]: --->  sagittal Model Testing Done.
+[INFO: inference.py:  404]: sagittal Inference on subject01 finished in 13.2228 seconds
+[INFO: run_prediction.py:  333]: Model prediction finished in 37.5145 seconds
+[INFO: run_prediction.py:  334]: Saving results in /content/output/subject01
+[INFO: img_processing_utils.py:   97]: Orig data orientation : ('L', 'I', 'A')
+[INFO: img_processing_utils.py:  101]: HypVINN Mask orientation: ('R', 'A', 'S')
+[INFO: img_processing_utils.py:  103]: HypVINN Mask after re-orientation: ('L', 'I', 'A')
+[INFO: img_processing_utils.py:  109]: HypVINN Prediction orientation: ('R', 'A', 'S')
+[INFO: img_processing_utils.py:  111]: HypVINN Prediction after re-orientation: ('L', 'I', 'A')
+[INFO: run_prediction.py:  351]: Prediction successfully saved in 5.43238377571106 seconds.
+[INFO: run_prediction.py:  365]: Computing stats
+[INFO: brainvolstats.py: 1415]: Replacing segmentation volume to compute volume measures from with the segmentation file /content/output/subject01/mri/hypothalamus.HypVINN.nii.gz.
+[INFO: run_prediction.py:  375]: Processing segmentation finished in 54.5462 seconds.
+[INFO: run_prediction.py:  386]: Processing whole pipeline finished in 54.6144 seconds.
+cd /content/FastSurfer/recon_surf
+./recon-surf.sh --sid subject01 --sd /content/output --t1 /content/output/subject01/mri/orig.mgz --mask_name /content/output/subject01/mri/mask.mgz --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --threads 4 --py python3.10\ -s
+=========================================================
+Start of the log for a new run_fastsurfer.sh invocation
+=========================================================
+Version: 2.5.0-dev+69138cb
+Sun May  4 11:16:12 PM UTC 2025
+
+Log file for FastSurfer pipeline, run_fastsurfer.sh and segmentation(s)
+WARNING: The --parallel flag is obsolete and will be removed in FastSurfer 3.
+  Hemispheres are now automatically processed in parallel, if threads for surface 
+  reconstruction are more than 1 (defined via --threads 2 or --threads_surf 2)!
+IMPORTANT NOTE: The threads behavior has also changed, --threads used to define the
+  number of threads per hemisphere, it now defines the number of threads in total!
+WARNING: Found 113 files in subject directory $SUBJECTS_DIR/subject01:
+  Potentially Overwriting: ./stats/cerebellum.CerebNet.stats ./stats/hypothalamus.HypVINN.stats ./stats/aseg.VINN.stats ./stats/aseg+DKT.VINN.stats ./mri/cerebellum.CerebNet.nii.gz ./mri/hypothalamus_mask.HypVINN.nii.gz ...
+python3.10 -s /content/FastSurfer/FastSurferCNN/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --brainmask_name /content/output/subject01/mri/mask.mgz --aseg_name /content/output/subject01/mri/aseg.auto_noCCseg.mgz --sid subject01 --seg_log /content/output/subject01/scripts/deep-seg.log --vox_size min --batch_size 8 --viewagg_device auto --device auto --threads 4 --sd /content/output
+[INFO: run_prediction.py:  647]: Checking or downloading default checkpoints ...
+[INFO: common.py:  821]: Single subject with absolute file path for input.
+[INFO: common.py:  879]: Analyzing single subject /content/MRI_human_1_norm.nii
+[INFO: common.py:  977]: Output will be stored in Subjects Directory: /content/output
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: run_prediction.py:  245]: Running view aggregation on cuda
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_coronal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_sagittal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_axial_v2.0.0.pkl
+[INFO: run_prediction.py:  324]: Successfully loaded image from /content/MRI_human_1_norm.nii.
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/orig/001.mgz.
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A min-conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : BUT image dimensions (256, 256, 150)
+[INFO: conform.py:  828]:  - Voxel Size 0.9375x0.9375x0.9375: BUT image 0.9375x0.9375x1.2000035
+[INFO: conform.py:  828]:  - Orientation LIA               : BUT strict: [[ 0.04 -0.07 1.2 ] [-0.93 0.12 0.06] [ 0.13 0.93 0.08]]
+[INFO: conform.py:  828]:  - Dtype uint8                   : BUT dtype float64
+[INFO: run_prediction.py:  337]: Conforming image
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/orig.mgz.
+[INFO: run_prediction.py:  400]: Run coronal prediction
+[INFO: dataset.py:   78]: Loading Coronal with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for coronal successful
+[INFO: inference.py:  469]: Coronal inference on /content/MRI_human_1_norm.nii finished in 8.0175 seconds
+[INFO: run_prediction.py:  400]: Run sagittal prediction
+[INFO: dataset.py:   69]: Loading Sagittal with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for sagittal successful
+[INFO: inference.py:  469]: Sagittal inference on /content/MRI_human_1_norm.nii finished in 8.0856 seconds
+[INFO: run_prediction.py:  400]: Run axial prediction
+[INFO: dataset.py:   74]: Loading Axial with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for axial successful
+[INFO: inference.py:  469]: Axial inference on /content/MRI_human_1_norm.nii finished in 8.3786 seconds
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz.
+[INFO: run_prediction.py:  724]: Creating brainmask based on segmentation...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/mask.mgz.
+[INFO: run_prediction.py:  743]: Creating aseg based on segmentation...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/aseg.auto_noCCseg.mgz.
+[INFO: run_prediction.py:  762]: Running volume-based QC check on segmentation...
+INFO: Running N4 bias-field correction...
+python3.10 -s /content/FastSurfer/recon_surf/N4_bias_correct.py --in /content/output/subject01/mri/orig.mgz --rescale /content/output/subject01/mri/orig_nu.mgz --aseg /content/output/subject01/mri/aseg.auto_noCCseg.mgz --threads 4
+
+N4 Bias Correction Parameters:
+
+- verbosity: -1
+- input volume: /content/output/subject01/mri/orig.mgz
+- output volume: do not save
+- rescaled volume: /content/output/subject01/mri/orig_nu.mgz
+- mask: default (>0)
+- aseg: /content/output/subject01/mri/aseg.auto_noCCseg.mgz
+- shrink factor: 4
+- number fitting levels: 4
+- number iterations: 50
+- convergence threshold: 0.0
+- threads: 4
+read MGZ (FreeSurfer) image via nibabel...
+executing N4 correction ...
+- mask: ones (default)
+normalize WM to 105.0 (find WM from aseg)
+read MGZ (FreeSurfer) image via nibabel...
+- source white matter intensity: 116.66
+- m: 0.8743
+converting rescaled to UCHAR
+writing PosixPath: /content/output/subject01/mri/orig_nu.mgz
+write MGZ (FreeSurfer) image via nibabel...
+python3.10 -s /content/FastSurfer/FastSurferCNN/segstats.py --segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --normfile /content/output/subject01/mri/orig_nu.mgz --lut /content/FastSurfer/FastSurferCNN/config/FreeSurferColorLUT.txt --sd /content/output --sid subject01 --threads 4 --empty --excludeid 0 --ids 2 4 5 7 8 10 11 12 13 14 15 16 17 18 24 26 28 31 41 43 44 46 47 49 50 51 52 53 54 58 60 63 77 251 252 253 254 255 1002 1003 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1034 1035 2002 2003 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2034 2035 --segstatsfile /content/output/subject01/stats/aseg+DKT.VINN.stats measures --compute Mask(/content/output/subject01/mri/mask.mgz) BrainSeg BrainSegNotVent SupraTentorial SupraTentorialNotVent SubCortGray rhCerebralWhiteMatter lhCerebralWhiteMatter CerebralWhiteMatter
+None of the labels [251, 252, 253, 254, 255] for merged label 10007 exist in the segmentation.
+Partial volume stats for 100 labels written to /content/output/subject01/stats/aseg+DKT.VINN.stats.
+Calculation took 16.95 seconds using up to 4 threads.
+python3.10 -s /content/FastSurfer/FastSurferCNN/segstats.py --segfile /content/output/subject01/mri/aseg.auto_noCCseg.mgz --normfile /content/output/subject01/mri/orig_nu.mgz --lut /content/FastSurfer/FastSurferCNN/config/FreeSurferColorLUT.txt --sd /content/output --sid subject01 --threads 4 --empty --excludeid 0 --ids 2 4 3 5 7 8 10 11 12 13 14 15 16 17 18 24 26 28 31 41 42 43 44 46 47 49 50 51 52 53 54 58 60 63 77 --segstatsfile /content/output/subject01/stats/aseg.VINN.stats measures --import all --file /content/output/subject01/stats/aseg+DKT.VINN.stats
+Partial volume stats for 35 labels written to /content/output/subject01/stats/aseg.VINN.stats.
+Calculation took 5.90 seconds using up to 4 threads.
+python3.10 -s /content/FastSurfer/CerebNet/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --cereb_segfile /content/output/subject01/mri/cerebellum.CerebNet.nii.gz --seg_log /content/output/subject01/scripts/deep-seg.log --async_io --batch_size 8 --viewagg_device auto --device auto --threads 4 --norm_name /content/output/subject01/mri/orig_nu.mgz --cereb_statsfile /content/output/subject01/stats/cerebellum.CerebNet.stats --sd /content/output
+[INFO: run_prediction.py:  151]: Checking or downloading default checkpoints ...
+[INFO: common.py:  821]: Single subject with absolute file path for input.
+[INFO: common.py:  879]: Analyzing single subject /content/MRI_human_1_norm.nii
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: inference.py:  421]: 25-05-04_23:20:35
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : True
+[INFO: conform.py:  828]:  - Voxel Size 1.0x1.0x1.0        : BUT image 0.9375x0.9375x0.9375
+[INFO: conform.py:  828]:  - Orientation LIA               : True
+[INFO: conform.py:  828]:  - Dtype uint8                   : True
+[INFO: data_utils.py:  101]: Conforming image to UCHAR, RAS orientation, and minimum isotropic voxels
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : BUT image dimensions (256, 256, 150)
+[INFO: conform.py:  828]:  - Voxel Size 1.0x1.0x1.0        : BUT image 0.9375x0.9375x1.2000035
+[INFO: conform.py:  828]:  - Orientation LIA               : BUT strict: [[ 0.04 -0.07 1.2 ] [-0.93 0.12 0.06] [ 0.13 0.93 0.08]]
+[INFO: conform.py:  828]:  - Dtype uint8                   : BUT dtype float64
+[INFO: data_utils.py:  101]: Conforming image to UCHAR, RAS orientation, and minimum isotropic voxels
+[INFO: conform.py:  978]: 
+[INFO: dataset.py:  260]: The conformed image and the segmentation do not share the same affine. The cerebellum mask is being resampled to localize it in the conformed image.
+[INFO: inference.py:  350]: Saving CerebNet cerebellum segmentation at /content/output/subject01/mri/cerebellum.CerebNet.nii.gz
+[INFO: inference.py:  499]: Subject 1/1 with id 'MRI_human_1_norm.nii' processed in 16.29 sec.
+python3.10 -s /content/FastSurfer/HypVINN/run_prediction.py --sd /content/output --sid subject01 --reg_mode coreg --threads 4 --async_io --batch_size 8 --seg_log /content/output/subject01/scripts/deep-seg.log --device auto --viewagg_device auto --t1 /content/output/subject01/mri/orig_nu.mgz
+[INFO: mode_config.py:   49]: Setting up input mode...
+[INFO: run_prediction.py:  255]: Running HypVINN segmentation pipeline on subject subject01
+[INFO: run_prediction.py:  256]: Output will be stored in: /content/output/subject01
+[INFO: run_prediction.py:  257]: T1 image input /content/output/subject01/mri/orig_nu.mgz
+[INFO: run_prediction.py:  258]: T2 image input None
+[INFO: run_prediction.py:  276]: Setting up HypVINN run
+[INFO: run_prediction.py:  282]: axial model configuration from /content/FastSurfer/HypVINN/config/HypVINN_axial_v1.1.0.yaml
+[INFO: run_prediction.py:  407]: Checking or downloading default checkpoints ...
+[INFO: run_prediction.py:  282]: coronal model configuration from /content/FastSurfer/HypVINN/config/HypVINN_coronal_v1.1.0.yaml
+[INFO: run_prediction.py:  282]: sagittal model configuration from /content/FastSurfer/HypVINN/config/HypVINN_sagittal_v1.1.0.yaml
+[INFO: run_prediction.py:  473]: Loading T1 image from : /content/output/subject01/mri/orig_nu.mgz
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: inference.py:  109]: Running view aggregation on cuda
+[INFO: run_prediction.py:  310]: ------------------------------------------------------------------------------------------------------------------------
+[INFO: run_prediction.py:  311]: Evaluating hypothalamus model on subject01
+[INFO: run_prediction.py:  320]: Scale factor: (np.float32(0.938), np.float32(0.938), np.float32(0.938))
+[INFO: run_prediction.py:  577]: Evaluating axial model, cpkt :/content/FastSurfer/checkpoints/HypVINN_axial_v1.1.0.pkl
+[INFO: inference.py:  183]: Loading checkpoint /content/FastSurfer/checkpoints/HypVINN_axial_v1.1.0.pkl
+[INFO: dataset.py:  166]: Loading t1 axial with input voxelsize (np.float32(0.938), np.float32(0.938))
+[INFO: dataset.py:  114]: Successfully loaded Image from subject01 for axial model
+[INFO: dataset.py:  126]: For inference T1 block weight was set to: 1.0 and the T2 block was set to: 0.0
+[INFO: inference.py:  345]: --->  axial Model Testing Done.
+[INFO: inference.py:  404]: axial Inference on subject01 finished in 11.0971 seconds
+[INFO: run_prediction.py:  577]: Evaluating coronal model, cpkt :/content/FastSurfer/checkpoints/HypVINN_coronal_v1.1.0.pkl
+[INFO: inference.py:  183]: Loading checkpoint /content/FastSurfer/checkpoints/HypVINN_coronal_v1.1.0.pkl
+[INFO: dataset.py:  160]: Loading t1 coronal with input voxelsize (np.float32(0.938), np.float32(0.938))
+[INFO: dataset.py:  114]: Successfully loaded Image from subject01 for coronal model
+[INFO: dataset.py:  126]: For inference T1 block weight was set to: 1.0 and the T2 block was set to: 0.0
+[INFO: inference.py:  345]: --->  coronal Model Testing Done.
+[INFO: inference.py:  404]: coronal Inference on subject01 finished in 10.9168 seconds
+[INFO: run_prediction.py:  577]: Evaluating sagittal model, cpkt :/content/FastSurfer/checkpoints/HypVINN_sagittal_v1.1.0.pkl
+[INFO: inference.py:  183]: Loading checkpoint /content/FastSurfer/checkpoints/HypVINN_sagittal_v1.1.0.pkl
+[INFO: dataset.py:  153]: Loading t1 sagittal with input voxelsize (np.float32(0.938), np.float32(0.938))
+[INFO: dataset.py:  114]: Successfully loaded Image from subject01 for sagittal model
+[INFO: dataset.py:  126]: For inference T1 block weight was set to: 1.0 and the T2 block was set to: 0.0
+[INFO: inference.py:  345]: --->  sagittal Model Testing Done.
+[INFO: inference.py:  404]: sagittal Inference on subject01 finished in 13.0831 seconds
+[INFO: run_prediction.py:  333]: Model prediction finished in 36.9982 seconds
+[INFO: run_prediction.py:  334]: Saving results in /content/output/subject01
+[INFO: img_processing_utils.py:   97]: Orig data orientation : ('L', 'I', 'A')
+[INFO: img_processing_utils.py:  101]: HypVINN Mask orientation: ('R', 'A', 'S')
+[INFO: img_processing_utils.py:  103]: HypVINN Mask after re-orientation: ('L', 'I', 'A')
+[INFO: img_processing_utils.py:  109]: HypVINN Prediction orientation: ('R', 'A', 'S')
+[INFO: img_processing_utils.py:  111]: HypVINN Prediction after re-orientation: ('L', 'I', 'A')
+[INFO: run_prediction.py:  351]: Prediction successfully saved in 4.24514627456665 seconds.
+[INFO: run_prediction.py:  365]: Computing stats
+[INFO: brainvolstats.py: 1415]: Replacing segmentation volume to compute volume measures from with the segmentation file /content/output/subject01/mri/hypothalamus.HypVINN.nii.gz.
+[INFO: run_prediction.py:  375]: Processing segmentation finished in 43.0787 seconds.
+[INFO: run_prediction.py:  386]: Processing whole pipeline finished in 43.1216 seconds.
+cd /content/FastSurfer/recon_surf
+./recon-surf.sh --sid subject01 --sd /content/output --t1 /content/output/subject01/mri/orig.mgz --mask_name /content/output/subject01/mri/mask.mgz --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --threads 4 --py python3.10\ -s
+=========================================================
+Start of the log for a new run_fastsurfer.sh invocation
+=========================================================
+Version: 2.5.0-dev+69138cb
+Sun May  4 11:21:57 PM UTC 2025
+
+Log file for FastSurfer pipeline, run_fastsurfer.sh and segmentation(s)
+WARNING: The --parallel flag is obsolete and will be removed in FastSurfer 3.
+  Hemispheres are now automatically processed in parallel, if threads for surface 
+  reconstruction are more than 1 (defined via --threads 2 or --threads_surf 2)!
+IMPORTANT NOTE: The threads behavior has also changed, --threads used to define the
+  number of threads per hemisphere, it now defines the number of threads in total!
+WARNING: Found 113 files in subject directory $SUBJECTS_DIR/subject01:
+  Potentially Overwriting: ./stats/cerebellum.CerebNet.stats ./stats/hypothalamus.HypVINN.stats ./stats/aseg.VINN.stats ./stats/aseg+DKT.VINN.stats ./mri/cerebellum.CerebNet.nii.gz ./mri/hypothalamus_mask.HypVINN.nii.gz ...
+python3.10 -s /content/FastSurfer/FastSurferCNN/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --brainmask_name /content/output/subject01/mri/mask.mgz --aseg_name /content/output/subject01/mri/aseg.auto_noCCseg.mgz --sid subject01 --seg_log /content/output/subject01/scripts/deep-seg.log --vox_size min --batch_size 8 --viewagg_device auto --device auto --threads 4 --sd /content/output
+[INFO: run_prediction.py:  647]: Checking or downloading default checkpoints ...
+[INFO: common.py:  821]: Single subject with absolute file path for input.
+[INFO: common.py:  879]: Analyzing single subject /content/MRI_human_1_norm.nii
+[INFO: common.py:  977]: Output will be stored in Subjects Directory: /content/output
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: run_prediction.py:  245]: Running view aggregation on cuda
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_coronal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_sagittal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_axial_v2.0.0.pkl
+[INFO: run_prediction.py:  324]: Successfully loaded image from /content/MRI_human_1_norm.nii.
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/orig/001.mgz.
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A min-conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : BUT image dimensions (256, 256, 150)
+[INFO: conform.py:  828]:  - Voxel Size 0.9375x0.9375x0.9375: BUT image 0.9375x0.9375x1.2000035
+[INFO: conform.py:  828]:  - Orientation LIA               : BUT strict: [[ 0.04 -0.07 1.2 ] [-0.93 0.12 0.06] [ 0.13 0.93 0.08]]
+[INFO: conform.py:  828]:  - Dtype uint8                   : BUT dtype float64
+[INFO: run_prediction.py:  337]: Conforming image
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/orig.mgz.
+[INFO: run_prediction.py:  400]: Run coronal prediction
+[INFO: dataset.py:   78]: Loading Coronal with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for coronal successful
+[INFO: inference.py:  469]: Coronal inference on /content/MRI_human_1_norm.nii finished in 8.3807 seconds
+[INFO: run_prediction.py:  400]: Run sagittal prediction
+[INFO: dataset.py:   69]: Loading Sagittal with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for sagittal successful
+[INFO: inference.py:  469]: Sagittal inference on /content/MRI_human_1_norm.nii finished in 8.4128 seconds
+[INFO: run_prediction.py:  400]: Run axial prediction
+[INFO: dataset.py:   74]: Loading Axial with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for axial successful
+[INFO: inference.py:  469]: Axial inference on /content/MRI_human_1_norm.nii finished in 8.6808 seconds
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz.
+[INFO: run_prediction.py:  724]: Creating brainmask based on segmentation...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/mask.mgz.
+[INFO: run_prediction.py:  743]: Creating aseg based on segmentation...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/aseg.auto_noCCseg.mgz.
+[INFO: run_prediction.py:  762]: Running volume-based QC check on segmentation...
+INFO: Running N4 bias-field correction...
+python3.10 -s /content/FastSurfer/recon_surf/N4_bias_correct.py --in /content/output/subject01/mri/orig.mgz --rescale /content/output/subject01/mri/orig_nu.mgz --aseg /content/output/subject01/mri/aseg.auto_noCCseg.mgz --threads 4
+
+N4 Bias Correction Parameters:
+
+- verbosity: -1
+- input volume: /content/output/subject01/mri/orig.mgz
+- output volume: do not save
+- rescaled volume: /content/output/subject01/mri/orig_nu.mgz
+- mask: default (>0)
+- aseg: /content/output/subject01/mri/aseg.auto_noCCseg.mgz
+- shrink factor: 4
+- number fitting levels: 4
+- number iterations: 50
+- convergence threshold: 0.0
+- threads: 4
+read MGZ (FreeSurfer) image via nibabel...
+executing N4 correction ...
+- mask: ones (default)
+normalize WM to 105.0 (find WM from aseg)
+read MGZ (FreeSurfer) image via nibabel...
+- source white matter intensity: 116.66
+- m: 0.8743
+converting rescaled to UCHAR
+writing PosixPath: /content/output/subject01/mri/orig_nu.mgz
+write MGZ (FreeSurfer) image via nibabel...
+python3.10 -s /content/FastSurfer/FastSurferCNN/segstats.py --segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --normfile /content/output/subject01/mri/orig_nu.mgz --lut /content/FastSurfer/FastSurferCNN/config/FreeSurferColorLUT.txt --sd /content/output --sid subject01 --threads 4 --empty --excludeid 0 --ids 2 4 5 7 8 10 11 12 13 14 15 16 17 18 24 26 28 31 41 43 44 46 47 49 50 51 52 53 54 58 60 63 77 251 252 253 254 255 1002 1003 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1034 1035 2002 2003 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2034 2035 --segstatsfile /content/output/subject01/stats/aseg+DKT.VINN.stats measures --compute Mask(/content/output/subject01/mri/mask.mgz) BrainSeg BrainSegNotVent SupraTentorial SupraTentorialNotVent SubCortGray rhCerebralWhiteMatter lhCerebralWhiteMatter CerebralWhiteMatter
+None of the labels [251, 252, 253, 254, 255] for merged label 10007 exist in the segmentation.
+Partial volume stats for 100 labels written to /content/output/subject01/stats/aseg+DKT.VINN.stats.
+Calculation took 15.82 seconds using up to 4 threads.
+python3.10 -s /content/FastSurfer/FastSurferCNN/segstats.py --segfile /content/output/subject01/mri/aseg.auto_noCCseg.mgz --normfile /content/output/subject01/mri/orig_nu.mgz --lut /content/FastSurfer/FastSurferCNN/config/FreeSurferColorLUT.txt --sd /content/output --sid subject01 --threads 4 --empty --excludeid 0 --ids 2 4 3 5 7 8 10 11 12 13 14 15 16 17 18 24 26 28 31 41 42 43 44 46 47 49 50 51 52 53 54 58 60 63 77 --segstatsfile /content/output/subject01/stats/aseg.VINN.stats measures --import all --file /content/output/subject01/stats/aseg+DKT.VINN.stats
+Partial volume stats for 35 labels written to /content/output/subject01/stats/aseg.VINN.stats.
+Calculation took 6.91 seconds using up to 4 threads.
+python3.10 -s /content/FastSurfer/CerebNet/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --cereb_segfile /content/output/subject01/mri/cerebellum.CerebNet.nii.gz --seg_log /content/output/subject01/scripts/deep-seg.log --async_io --batch_size 8 --viewagg_device auto --device auto --threads 4 --norm_name /content/output/subject01/mri/orig_nu.mgz --cereb_statsfile /content/output/subject01/stats/cerebellum.CerebNet.stats --sd /content/output
+[INFO: run_prediction.py:  151]: Checking or downloading default checkpoints ...
+[INFO: common.py:  821]: Single subject with absolute file path for input.
+[INFO: common.py:  879]: Analyzing single subject /content/MRI_human_1_norm.nii
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: inference.py:  421]: 25-05-04_23:26:19
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : True
+[INFO: conform.py:  828]:  - Voxel Size 1.0x1.0x1.0        : BUT image 0.9375x0.9375x0.9375
+[INFO: conform.py:  828]:  - Orientation LIA               : True
+[INFO: conform.py:  828]:  - Dtype uint8                   : True
+[INFO: data_utils.py:  101]: Conforming image to UCHAR, RAS orientation, and minimum isotropic voxels
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : BUT image dimensions (256, 256, 150)
+[INFO: conform.py:  828]:  - Voxel Size 1.0x1.0x1.0        : BUT image 0.9375x0.9375x1.2000035
+[INFO: conform.py:  828]:  - Orientation LIA               : BUT strict: [[ 0.04 -0.07 1.2 ] [-0.93 0.12 0.06] [ 0.13 0.93 0.08]]
+[INFO: conform.py:  828]:  - Dtype uint8                   : BUT dtype float64
+[INFO: data_utils.py:  101]: Conforming image to UCHAR, RAS orientation, and minimum isotropic voxels
+[INFO: conform.py:  978]: 
+[INFO: dataset.py:  260]: The conformed image and the segmentation do not share the same affine. The cerebellum mask is being resampled to localize it in the conformed image.
+[INFO: inference.py:  350]: Saving CerebNet cerebellum segmentation at /content/output/subject01/mri/cerebellum.CerebNet.nii.gz
+[INFO: inference.py:  499]: Subject 1/1 with id 'MRI_human_1_norm.nii' processed in 16.54 sec.
+python3.10 -s /content/FastSurfer/HypVINN/run_prediction.py --sd /content/output --sid subject01 --reg_mode coreg --threads 4 --async_io --batch_size 8 --seg_log /content/output/subject01/scripts/deep-seg.log --device auto --viewagg_device auto --t1 /content/output/subject01/mri/orig_nu.mgz
+[INFO: mode_config.py:   49]: Setting up input mode...
+[INFO: run_prediction.py:  255]: Running HypVINN segmentation pipeline on subject subject01
+[INFO: run_prediction.py:  256]: Output will be stored in: /content/output/subject01
+[INFO: run_prediction.py:  257]: T1 image input /content/output/subject01/mri/orig_nu.mgz
+[INFO: run_prediction.py:  258]: T2 image input None
+[INFO: run_prediction.py:  276]: Setting up HypVINN run
+[INFO: run_prediction.py:  282]: axial model configuration from /content/FastSurfer/HypVINN/config/HypVINN_axial_v1.1.0.yaml
+[INFO: run_prediction.py:  407]: Checking or downloading default checkpoints ...
+[INFO: run_prediction.py:  282]: coronal model configuration from /content/FastSurfer/HypVINN/config/HypVINN_coronal_v1.1.0.yaml
+[INFO: run_prediction.py:  282]: sagittal model configuration from /content/FastSurfer/HypVINN/config/HypVINN_sagittal_v1.1.0.yaml
+[INFO: run_prediction.py:  473]: Loading T1 image from : /content/output/subject01/mri/orig_nu.mgz
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: inference.py:  109]: Running view aggregation on cuda
+[INFO: run_prediction.py:  310]: ------------------------------------------------------------------------------------------------------------------------
+[INFO: run_prediction.py:  311]: Evaluating hypothalamus model on subject01
+[INFO: run_prediction.py:  320]: Scale factor: (np.float32(0.938), np.float32(0.938), np.float32(0.938))
+[INFO: run_prediction.py:  577]: Evaluating axial model, cpkt :/content/FastSurfer/checkpoints/HypVINN_axial_v1.1.0.pkl
+[INFO: inference.py:  183]: Loading checkpoint /content/FastSurfer/checkpoints/HypVINN_axial_v1.1.0.pkl
+[INFO: dataset.py:  166]: Loading t1 axial with input voxelsize (np.float32(0.938), np.float32(0.938))
+[INFO: dataset.py:  114]: Successfully loaded Image from subject01 for axial model
+[INFO: dataset.py:  126]: For inference T1 block weight was set to: 1.0 and the T2 block was set to: 0.0
+[INFO: inference.py:  345]: --->  axial Model Testing Done.
+[INFO: inference.py:  404]: axial Inference on subject01 finished in 11.2648 seconds
+[INFO: run_prediction.py:  577]: Evaluating coronal model, cpkt :/content/FastSurfer/checkpoints/HypVINN_coronal_v1.1.0.pkl
+[INFO: inference.py:  183]: Loading checkpoint /content/FastSurfer/checkpoints/HypVINN_coronal_v1.1.0.pkl
+[INFO: dataset.py:  160]: Loading t1 coronal with input voxelsize (np.float32(0.938), np.float32(0.938))
+[INFO: dataset.py:  114]: Successfully loaded Image from subject01 for coronal model
+[INFO: dataset.py:  126]: For inference T1 block weight was set to: 1.0 and the T2 block was set to: 0.0
+[INFO: inference.py:  345]: --->  coronal Model Testing Done.
+[INFO: inference.py:  404]: coronal Inference on subject01 finished in 11.0866 seconds
+[INFO: run_prediction.py:  577]: Evaluating sagittal model, cpkt :/content/FastSurfer/checkpoints/HypVINN_sagittal_v1.1.0.pkl
+[INFO: inference.py:  183]: Loading checkpoint /content/FastSurfer/checkpoints/HypVINN_sagittal_v1.1.0.pkl
+[INFO: dataset.py:  153]: Loading t1 sagittal with input voxelsize (np.float32(0.938), np.float32(0.938))
+[INFO: dataset.py:  114]: Successfully loaded Image from subject01 for sagittal model
+[INFO: dataset.py:  126]: For inference T1 block weight was set to: 1.0 and the T2 block was set to: 0.0
+[INFO: inference.py:  345]: --->  sagittal Model Testing Done.
+[INFO: inference.py:  404]: sagittal Inference on subject01 finished in 13.1750 seconds
+[INFO: run_prediction.py:  333]: Model prediction finished in 37.4538 seconds
+[INFO: run_prediction.py:  334]: Saving results in /content/output/subject01
+[INFO: img_processing_utils.py:   97]: Orig data orientation : ('L', 'I', 'A')
+[INFO: img_processing_utils.py:  101]: HypVINN Mask orientation: ('R', 'A', 'S')
+[INFO: img_processing_utils.py:  103]: HypVINN Mask after re-orientation: ('L', 'I', 'A')
+[INFO: img_processing_utils.py:  109]: HypVINN Prediction orientation: ('R', 'A', 'S')
+[INFO: img_processing_utils.py:  111]: HypVINN Prediction after re-orientation: ('L', 'I', 'A')
+[INFO: run_prediction.py:  351]: Prediction successfully saved in 4.4599738121032715 seconds.
+[INFO: run_prediction.py:  365]: Computing stats
+[INFO: brainvolstats.py: 1415]: Replacing segmentation volume to compute volume measures from with the segmentation file /content/output/subject01/mri/hypothalamus.HypVINN.nii.gz.
+[INFO: run_prediction.py:  375]: Processing segmentation finished in 44.0604 seconds.
+[INFO: run_prediction.py:  386]: Processing whole pipeline finished in 44.1035 seconds.
+cd /content/FastSurfer/recon_surf
+./recon-surf.sh --sid subject01 --sd /content/output --t1 /content/output/subject01/mri/orig.mgz --mask_name /content/output/subject01/mri/mask.mgz --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --threads 4 --py python3.10\ -s
+=========================================================
+Start of the log for a new run_fastsurfer.sh invocation
+=========================================================
+Version: 2.5.0-dev+69138cb
+Sun May  4 11:29:18 PM UTC 2025
+
+Log file for FastSurfer pipeline, run_fastsurfer.sh and segmentation(s)
+WARNING: The --parallel flag is obsolete and will be removed in FastSurfer 3.
+  Hemispheres are now automatically processed in parallel, if threads for surface 
+  reconstruction are more than 1 (defined via --threads 2 or --threads_surf 2)!
+IMPORTANT NOTE: The threads behavior has also changed, --threads used to define the
+  number of threads per hemisphere, it now defines the number of threads in total!
+WARNING: Found 113 files in subject directory $SUBJECTS_DIR/subject01:
+  Potentially Overwriting: ./stats/cerebellum.CerebNet.stats ./stats/hypothalamus.HypVINN.stats ./stats/aseg.VINN.stats ./stats/aseg+DKT.VINN.stats ./mri/cerebellum.CerebNet.nii.gz ./mri/hypothalamus_mask.HypVINN.nii.gz ...
+python3.10 -s /content/FastSurfer/FastSurferCNN/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --brainmask_name /content/output/subject01/mri/mask.mgz --aseg_name /content/output/subject01/mri/aseg.auto_noCCseg.mgz --sid subject01 --seg_log /content/output/subject01/scripts/deep-seg.log --vox_size min --batch_size 8 --viewagg_device auto --device auto --threads 4 --sd /content/output
+[INFO: run_prediction.py:  647]: Checking or downloading default checkpoints ...
+[INFO: common.py:  821]: Single subject with absolute file path for input.
+[INFO: common.py:  879]: Analyzing single subject /content/MRI_human_1_norm.nii
+[INFO: common.py:  977]: Output will be stored in Subjects Directory: /content/output
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: run_prediction.py:  245]: Running view aggregation on cuda
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_coronal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_sagittal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_axial_v2.0.0.pkl
+[INFO: run_prediction.py:  324]: Successfully loaded image from /content/MRI_human_1_norm.nii.
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/orig/001.mgz.
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A min-conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : BUT image dimensions (256, 256, 150)
+[INFO: conform.py:  828]:  - Voxel Size 0.9375x0.9375x0.9375: BUT image 0.9375x0.9375x1.2000035
+[INFO: conform.py:  828]:  - Orientation LIA               : BUT strict: [[ 0.04 -0.07 1.2 ] [-0.93 0.12 0.06] [ 0.13 0.93 0.08]]
+[INFO: conform.py:  828]:  - Dtype uint8                   : BUT dtype float64
+[INFO: run_prediction.py:  337]: Conforming image
+run_fastsurfer.sh terminated via signal at Sun, 04 May 2025 23:29:28 +0000!
+ERROR: FastSurfer asegdkt segmentation failed.
+=========================================================
+Start of the log for a new run_fastsurfer.sh invocation
+=========================================================
+Version: 2.5.0-dev+69138cb
+Sun May  4 11:29:49 PM UTC 2025
+
+Log file for FastSurfer pipeline, run_fastsurfer.sh and segmentation(s)
+WARNING: The --parallel flag is obsolete and will be removed in FastSurfer 3.
+  Hemispheres are now automatically processed in parallel, if threads for surface 
+  reconstruction are more than 1 (defined via --threads 2 or --threads_surf 2)!
+IMPORTANT NOTE: The threads behavior has also changed, --threads used to define the
+  number of threads per hemisphere, it now defines the number of threads in total!
+WARNING: Found 113 files in subject directory $SUBJECTS_DIR/subject01:
+  Potentially Overwriting: ./stats/cerebellum.CerebNet.stats ./stats/hypothalamus.HypVINN.stats ./stats/aseg.VINN.stats ./stats/aseg+DKT.VINN.stats ./mri/cerebellum.CerebNet.nii.gz ./mri/hypothalamus_mask.HypVINN.nii.gz ...
+python3.10 -s /content/FastSurfer/FastSurferCNN/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --brainmask_name /content/output/subject01/mri/mask.mgz --aseg_name /content/output/subject01/mri/aseg.auto_noCCseg.mgz --sid subject01 --seg_log /content/output/subject01/scripts/deep-seg.log --vox_size min --batch_size 8 --viewagg_device auto --device auto --threads 4 --sd /content/output
+[INFO: run_prediction.py:  647]: Checking or downloading default checkpoints ...
+[INFO: common.py:  821]: Single subject with absolute file path for input.
+[INFO: common.py:  879]: Analyzing single subject /content/MRI_human_1_norm.nii
+[INFO: common.py:  977]: Output will be stored in Subjects Directory: /content/output
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: run_prediction.py:  245]: Running view aggregation on cuda
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_coronal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_sagittal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /content/FastSurfer/checkpoints/aparc_vinn_axial_v2.0.0.pkl
+[INFO: run_prediction.py:  324]: Successfully loaded image from /content/MRI_human_1_norm.nii.
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/orig/001.mgz.
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A min-conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : BUT image dimensions (256, 256, 150)
+[INFO: conform.py:  828]:  - Voxel Size 0.9375x0.9375x0.9375: BUT image 0.9375x0.9375x1.2000035
+[INFO: conform.py:  828]:  - Orientation LIA               : BUT strict: [[ 0.04 -0.07 1.2 ] [-0.93 0.12 0.06] [ 0.13 0.93 0.08]]
+[INFO: conform.py:  828]:  - Dtype uint8                   : BUT dtype float64
+[INFO: run_prediction.py:  337]: Conforming image
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/orig.mgz.
+[INFO: run_prediction.py:  400]: Run coronal prediction
+[INFO: dataset.py:   78]: Loading Coronal with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for coronal successful
+[INFO: inference.py:  469]: Coronal inference on /content/MRI_human_1_norm.nii finished in 8.1312 seconds
+[INFO: run_prediction.py:  400]: Run sagittal prediction
+[INFO: dataset.py:   69]: Loading Sagittal with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for sagittal successful
+[INFO: inference.py:  469]: Sagittal inference on /content/MRI_human_1_norm.nii finished in 8.2822 seconds
+[INFO: run_prediction.py:  400]: Run axial prediction
+[INFO: dataset.py:   74]: Loading Axial with input voxelsize (np.float32(0.9375), np.float32(0.9375))
+[INFO: inference.py:  408]: Inference on 32 batches for axial successful
+[INFO: inference.py:  469]: Axial inference on /content/MRI_human_1_norm.nii finished in 8.5605 seconds
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz.
+[INFO: run_prediction.py:  724]: Creating brainmask based on segmentation...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/mask.mgz.
+[INFO: run_prediction.py:  743]: Creating aseg based on segmentation...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /content/output/subject01/mri/aseg.auto_noCCseg.mgz.
+[INFO: run_prediction.py:  762]: Running volume-based QC check on segmentation...
+INFO: Running N4 bias-field correction...
+python3.10 -s /content/FastSurfer/recon_surf/N4_bias_correct.py --in /content/output/subject01/mri/orig.mgz --rescale /content/output/subject01/mri/orig_nu.mgz --aseg /content/output/subject01/mri/aseg.auto_noCCseg.mgz --threads 4
+
+N4 Bias Correction Parameters:
+
+- verbosity: -1
+- input volume: /content/output/subject01/mri/orig.mgz
+- output volume: do not save
+- rescaled volume: /content/output/subject01/mri/orig_nu.mgz
+- mask: default (>0)
+- aseg: /content/output/subject01/mri/aseg.auto_noCCseg.mgz
+- shrink factor: 4
+- number fitting levels: 4
+- number iterations: 50
+- convergence threshold: 0.0
+- threads: 4
+read MGZ (FreeSurfer) image via nibabel...
+executing N4 correction ...
+- mask: ones (default)
+normalize WM to 105.0 (find WM from aseg)
+read MGZ (FreeSurfer) image via nibabel...
+- source white matter intensity: 116.66
+- m: 0.8743
+converting rescaled to UCHAR
+writing PosixPath: /content/output/subject01/mri/orig_nu.mgz
+write MGZ (FreeSurfer) image via nibabel...
+python3.10 -s /content/FastSurfer/FastSurferCNN/segstats.py --segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --normfile /content/output/subject01/mri/orig_nu.mgz --lut /content/FastSurfer/FastSurferCNN/config/FreeSurferColorLUT.txt --sd /content/output --sid subject01 --threads 4 --empty --excludeid 0 --ids 2 4 5 7 8 10 11 12 13 14 15 16 17 18 24 26 28 31 41 43 44 46 47 49 50 51 52 53 54 58 60 63 77 251 252 253 254 255 1002 1003 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1034 1035 2002 2003 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2034 2035 --segstatsfile /content/output/subject01/stats/aseg+DKT.VINN.stats measures --compute Mask(/content/output/subject01/mri/mask.mgz) BrainSeg BrainSegNotVent SupraTentorial SupraTentorialNotVent SubCortGray rhCerebralWhiteMatter lhCerebralWhiteMatter CerebralWhiteMatter
+None of the labels [251, 252, 253, 254, 255] for merged label 10007 exist in the segmentation.
+Partial volume stats for 100 labels written to /content/output/subject01/stats/aseg+DKT.VINN.stats.
+Calculation took 16.07 seconds using up to 4 threads.
+python3.10 -s /content/FastSurfer/FastSurferCNN/segstats.py --segfile /content/output/subject01/mri/aseg.auto_noCCseg.mgz --normfile /content/output/subject01/mri/orig_nu.mgz --lut /content/FastSurfer/FastSurferCNN/config/FreeSurferColorLUT.txt --sd /content/output --sid subject01 --threads 4 --empty --excludeid 0 --ids 2 4 3 5 7 8 10 11 12 13 14 15 16 17 18 24 26 28 31 41 42 43 44 46 47 49 50 51 52 53 54 58 60 63 77 --segstatsfile /content/output/subject01/stats/aseg.VINN.stats measures --import all --file /content/output/subject01/stats/aseg+DKT.VINN.stats
+Partial volume stats for 35 labels written to /content/output/subject01/stats/aseg.VINN.stats.
+Calculation took 6.15 seconds using up to 4 threads.
+python3.10 -s /content/FastSurfer/CerebNet/run_prediction.py --t1 /content/MRI_human_1_norm.nii --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /content/output/subject01/mri/orig.mgz --cereb_segfile /content/output/subject01/mri/cerebellum.CerebNet.nii.gz --seg_log /content/output/subject01/scripts/deep-seg.log --async_io --batch_size 8 --viewagg_device auto --device auto --threads 4 --norm_name /content/output/subject01/mri/orig_nu.mgz --cereb_statsfile /content/output/subject01/stats/cerebellum.CerebNet.stats --sd /content/output
+[INFO: run_prediction.py:  151]: Checking or downloading default checkpoints ...
+[INFO: common.py:  821]: Single subject with absolute file path for input.
+[INFO: common.py:  879]: Analyzing single subject /content/MRI_human_1_norm.nii
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: inference.py:  421]: 25-05-04_23:34:14
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : True
+[INFO: conform.py:  828]:  - Voxel Size 1.0x1.0x1.0        : BUT image 0.9375x0.9375x0.9375
+[INFO: conform.py:  828]:  - Orientation LIA               : True
+[INFO: conform.py:  828]:  - Dtype uint8                   : True
+[INFO: data_utils.py:  101]: Conforming image to UCHAR, RAS orientation, and minimum isotropic voxels
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : BUT image dimensions (256, 256, 150)
+[INFO: conform.py:  828]:  - Voxel Size 1.0x1.0x1.0        : BUT image 0.9375x0.9375x1.2000035
+[INFO: conform.py:  828]:  - Orientation LIA               : BUT strict: [[ 0.04 -0.07 1.2 ] [-0.93 0.12 0.06] [ 0.13 0.93 0.08]]
+[INFO: conform.py:  828]:  - Dtype uint8                   : BUT dtype float64
+[INFO: data_utils.py:  101]: Conforming image to UCHAR, RAS orientation, and minimum isotropic voxels
+[INFO: conform.py:  978]: 
+[INFO: dataset.py:  260]: The conformed image and the segmentation do not share the same affine. The cerebellum mask is being resampled to localize it in the conformed image.
+[INFO: inference.py:  350]: Saving CerebNet cerebellum segmentation at /content/output/subject01/mri/cerebellum.CerebNet.nii.gz
+[INFO: inference.py:  499]: Subject 1/1 with id 'MRI_human_1_norm.nii' processed in 16.81 sec.
+python3.10 -s /content/FastSurfer/HypVINN/run_prediction.py --sd /content/output --sid subject01 --reg_mode coreg --threads 4 --async_io --batch_size 8 --seg_log /content/output/subject01/scripts/deep-seg.log --device auto --viewagg_device auto --t1 /content/output/subject01/mri/orig_nu.mgz
+[INFO: mode_config.py:   49]: Setting up input mode...
+[INFO: run_prediction.py:  255]: Running HypVINN segmentation pipeline on subject subject01
+[INFO: run_prediction.py:  256]: Output will be stored in: /content/output/subject01
+[INFO: run_prediction.py:  257]: T1 image input /content/output/subject01/mri/orig_nu.mgz
+[INFO: run_prediction.py:  258]: T2 image input None
+[INFO: run_prediction.py:  276]: Setting up HypVINN run
+[INFO: run_prediction.py:  282]: axial model configuration from /content/FastSurfer/HypVINN/config/HypVINN_axial_v1.1.0.yaml
+[INFO: run_prediction.py:  407]: Checking or downloading default checkpoints ...
+[INFO: run_prediction.py:  282]: coronal model configuration from /content/FastSurfer/HypVINN/config/HypVINN_coronal_v1.1.0.yaml
+[INFO: run_prediction.py:  282]: sagittal model configuration from /content/FastSurfer/HypVINN/config/HypVINN_sagittal_v1.1.0.yaml
+[INFO: run_prediction.py:  473]: Loading T1 image from : /content/output/subject01/mri/orig_nu.mgz
+[INFO: common.py:  106]: Using device: cuda
+[INFO: common.py:  106]: Using viewagg_device: cuda
+[INFO: inference.py:  109]: Running view aggregation on cuda
+[INFO: run_prediction.py:  310]: ------------------------------------------------------------------------------------------------------------------------
+[INFO: run_prediction.py:  311]: Evaluating hypothalamus model on subject01
+[INFO: run_prediction.py:  320]: Scale factor: (np.float32(0.938), np.float32(0.938), np.float32(0.938))
+[INFO: run_prediction.py:  577]: Evaluating axial model, cpkt :/content/FastSurfer/checkpoints/HypVINN_axial_v1.1.0.pkl
+[INFO: inference.py:  183]: Loading checkpoint /content/FastSurfer/checkpoints/HypVINN_axial_v1.1.0.pkl
+[INFO: dataset.py:  166]: Loading t1 axial with input voxelsize (np.float32(0.938), np.float32(0.938))
+[INFO: dataset.py:  114]: Successfully loaded Image from subject01 for axial model
+[INFO: dataset.py:  126]: For inference T1 block weight was set to: 1.0 and the T2 block was set to: 0.0
+[INFO: inference.py:  345]: --->  axial Model Testing Done.
+[INFO: inference.py:  404]: axial Inference on subject01 finished in 11.1452 seconds
+[INFO: run_prediction.py:  577]: Evaluating coronal model, cpkt :/content/FastSurfer/checkpoints/HypVINN_coronal_v1.1.0.pkl
+[INFO: inference.py:  183]: Loading checkpoint /content/FastSurfer/checkpoints/HypVINN_coronal_v1.1.0.pkl
+[INFO: dataset.py:  160]: Loading t1 coronal with input voxelsize (np.float32(0.938), np.float32(0.938))
+[INFO: dataset.py:  114]: Successfully loaded Image from subject01 for coronal model
+[INFO: dataset.py:  126]: For inference T1 block weight was set to: 1.0 and the T2 block was set to: 0.0
+[INFO: inference.py:  345]: --->  coronal Model Testing Done.
+[INFO: inference.py:  404]: coronal Inference on subject01 finished in 10.9191 seconds
+[INFO: run_prediction.py:  577]: Evaluating sagittal model, cpkt :/content/FastSurfer/checkpoints/HypVINN_sagittal_v1.1.0.pkl
+[INFO: inference.py:  183]: Loading checkpoint /content/FastSurfer/checkpoints/HypVINN_sagittal_v1.1.0.pkl
+[INFO: dataset.py:  153]: Loading t1 sagittal with input voxelsize (np.float32(0.938), np.float32(0.938))
+[INFO: dataset.py:  114]: Successfully loaded Image from subject01 for sagittal model
+[INFO: dataset.py:  126]: For inference T1 block weight was set to: 1.0 and the T2 block was set to: 0.0
+[INFO: inference.py:  345]: --->  sagittal Model Testing Done.
+[INFO: inference.py:  404]: sagittal Inference on subject01 finished in 13.0736 seconds
+[INFO: run_prediction.py:  333]: Model prediction finished in 37.7303 seconds
+[INFO: run_prediction.py:  334]: Saving results in /content/output/subject01
+[INFO: img_processing_utils.py:   97]: Orig data orientation : ('L', 'I', 'A')
+[INFO: img_processing_utils.py:  101]: HypVINN Mask orientation: ('R', 'A', 'S')
+[INFO: img_processing_utils.py:  103]: HypVINN Mask after re-orientation: ('L', 'I', 'A')
+[INFO: img_processing_utils.py:  109]: HypVINN Prediction orientation: ('R', 'A', 'S')
+[INFO: img_processing_utils.py:  111]: HypVINN Prediction after re-orientation: ('L', 'I', 'A')
+[INFO: run_prediction.py:  351]: Prediction successfully saved in 4.141254186630249 seconds.
+[INFO: run_prediction.py:  365]: Computing stats
+[INFO: brainvolstats.py: 1415]: Replacing segmentation volume to compute volume measures from with the segmentation file /content/output/subject01/mri/hypothalamus.HypVINN.nii.gz.
+[INFO: run_prediction.py:  375]: Processing segmentation finished in 44.3240 seconds.
+[INFO: run_prediction.py:  386]: Processing whole pipeline finished in 44.3961 seconds.
+cd /content/FastSurfer/recon_surf
+./recon-surf.sh --sid subject01 --sd /content/output --t1 /content/output/subject01/mri/orig.mgz --mask_name /content/output/subject01/mri/mask.mgz --asegdkt_segfile /content/output/subject01/mri/aparc.DKTatlas+aseg.deep.mgz --threads 4 --py python3.10\ -s
