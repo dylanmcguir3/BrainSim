@@ -12,6 +12,9 @@
     <RequiredPlugin name="Sofa.Component.MechanicalLoad"/> <!-- ConstantForceField -->
     <RequiredPlugin name="Sofa.Component.SceneUtility"/> <!-- InfoComponent (if needed for debugging) -->
     <RequiredPlugin name="Sofa.Component.Visual"/> <!-- Needed to use components [VisualStyle] -->  
+    <RequiredPlugin name="SofaCUDA"/> <!-- Needed to use components [CUDA] -->
+    <RequiredPlugin name="Sofa.Component.Topology.Container.Constant"/> <!-- Needed to use components [MeshTopology] -->  
+    <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->  
 
 
     <!-- Load Gmsh .msh volume mesh -->
@@ -23,19 +26,26 @@
     <Node name="WhiteMatter">
         <!-- Solvers -->
         <EulerImplicitSolver rayleighStiffness="0.1" rayleighMass="0.1" />
-        <CGLinearSolver iterations="200" tolerance="1e-9" threshold="1e-9" />
+        <CGLinearSolver iterations="200" tolerance="1e-6" threshold="1e-6" />
 
         <!-- Topology + geometry -->
         <TetrahedronSetTopologyContainer name="topo" src="@../meshLoader" />
-        <TetrahedronSetGeometryAlgorithms template="Vec3d" name="GeomAlgo" />
-        <MechanicalObject template="Vec3d" name="MechanicalModel" showObject="1" />
+        <TetrahedronSetGeometryAlgorithms template="CudaVec3f" name="GeomAlgo" />
+        <MechanicalObject template="CudaVec3f" name="MechanicalModel" showObject="1" />
 
         <!--Material -->
-        <ParallelTetrahedronFEMForceField name="FEM" youngModulus="10000" poissonRatio="0.4" />
+        <TetrahedronFEMForceField name="FEM" youngModulus="1200" poissonRatio="0.495" mstate="@MechanicalModel"/>
 
         <!-- Mass and external force -->
         <UniformMass name="mass" totalMass="10" />
-        <ConstantForceField totalForce="0 -1 0" />
+        <FixedProjectiveConstraint indices="0 1 2 3 4 5 6 7 8 9" />
+        <Node name="VisualSurface">
+            <MeshSTLLoader name="surfaceLoader" filename="white_matter_inverted.stl" rotation="0 0 -90" />
+            <MeshTopology src="@surfaceLoader" />
+            <OglModel name="OglModel" src="@surfaceLoader" color="1.0 0.6 0.8" />
+            <BarycentricMapping input="@MechanicalModel" output="@OglModel" template="CudaVec3f,Vec3d" />
+        </Node>
     </Node>
+
 
 </Node>
