@@ -3,8 +3,8 @@ import numpy as np
 import nibabel as nib
 
 # Path to your FreeSurfer .surf file (update this to your actual path)
-surf_path = 'subject01/bem/outer_skull.surf'
-stl_output_path = 'outer_skull.stl'
+surf_path = 'subject01/bem/inner_skull.surf'
+stl_output_path = 'inner_skull.stl'
 
 if not os.path.exists(surf_path):
     print(f"Surf file '{surf_path}' not found. Please place your .surf file in the working directory or update `surf_path`.")
