@@ -15,7 +15,9 @@
     <RequiredPlugin name="SofaCUDA"/> <!-- Needed to use components [CUDA] -->
     <RequiredPlugin name="Sofa.Component.Topology.Container.Constant"/> <!-- Needed to use components [MeshTopology] -->  
     <RequiredPlugin name="Sofa.GL.Component.Rendering3D"/> <!-- Needed to use components [OglModel] -->  
-
+    <RequiredPlugin name="Sofa.Component.Collision.Geometry"/> <!-- Needed to use components [TriangleCollisionModel] -->  
+    <RequiredPlugin name="Sofa.Component.Constraint.Projective"/> <!-- Needed to use components [FixedProjectiveConstraint] -->  
+    <RequiredPlugin name="Sofa.Component.Mapping.Linear"/> <!-- Needed to use components [BarycentricMapping] -->  
 
     <!-- Load Gmsh .msh volume mesh -->
     <MeshGmshLoader name="meshLoader" filename="brain.msh" rotation="0 0 -90"/>
@@ -44,6 +46,27 @@
             <MeshTopology src="@surfaceLoader" />
             <OglModel name="OglModel" src="@surfaceLoader" color="1.0 0.6 0.8" />
             <BarycentricMapping input="@MechanicalModel" output="@OglModel" template="CudaVec3f,Vec3d" />
+        </Node>
+    </Node>
+
+
+    <Node name="Skull">
+        <MeshSTLLoader name="skullLoader" filename="../skull/inner_skull_centered.stl" rotation="-90 0 0"/>
+        <!-- Solvers -->
+        <MeshTopology name="MeshToTopology" src="@skullLoader" />
+
+        <MechanicalObject template="Vec3d" name="MechanicalModel" showObject="1"/>
+
+        <TriangleCollisionModel name="CollisionModel" />
+        
+
+        <!-- Mass and external force -->
+        <UniformMass name="mass" totalMass="10" />
+        <FixedProjectiveConstraint indices="0 1 2 3 4 5 6 7 8 9" />
+        <Node name="VisualSurface">
+            <MeshTopology src="@../skullLoader"/>
+            <OglModel name="OglModel" src="@../skullLoader" color="0.8 0.8 0.8"/>
+            <BarycentricMapping input="@MechanicalModel" output="@OglModel"/>
         </Node>
     </Node>
 
